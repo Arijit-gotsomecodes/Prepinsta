@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.instagram-logo {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.camera-icon {
+    width: 70%;
+    height: 70%;
+    background-color: transparent;
+    border: 30px solid white;
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-circle {
+    width: 50%;
+    height: 50%;
+    background-color: transparent;
+    border: 30px solid white;
+    border-radius: 50%;
+}
+
+.small-circle {
+    position: absolute;
+    top: 21%;
+    right: 21%;
+    width: 10%;
+    height: 10%;
+    background-color: white;
+    border-radius: 50%;
+}

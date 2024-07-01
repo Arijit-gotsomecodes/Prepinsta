@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+        section#categories {
+            margin: 20px 0;
+        }
+        section#products {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        div.product {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+        }
+        img.product-image {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Online Store</h1>
+    </header>
+    <section id="categories">
+        <h2>Product Categories</h2>
+        <ul>
+            <li><a href="#category1">Mobile</a></li>
+            <li><a href="#category2">Laptop</a></li>
+            <li><a href="#category3">AC</a></li>
+        </ul>
+    </section>
+    <section id="products">
+        <div class="product">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2023/3/296178163/GX/GL/SD/186724856/vivo-mobile-phone.jpg" alt="Product 1" class="product-image">
+            <h3>Product 1</h3>
+            <p>Description of Product 1.</p>
+            <a href="product1-details.html">More details</a>
+        </div>
+        <div class="product">
+            <img src="https://cdn.ttgtmedia.com/rms/onlineimages/hp_elitebook_mobile.jpg" alt="Product 2" class="product-image">
+            <h3>Product 2</h3>
+            <p>Description of Product 2.</p>
+            <a href="product2-details.html">More details</a>
+        </div>
+        <!-- More products can be added similarly -->
+    </section>
+</body>
+</html>
