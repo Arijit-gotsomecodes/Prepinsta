@@ -1,0 +1,142 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("https://www.designyourway.net/diverse/darkpat/wallpaper_800x600_935.jpg");
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Header Section */
+  header {
+    background: url("https://shorturl.at/wjubi") no-repeat center center/cover;
+    color: white;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .header-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    padding-bottom: 45px;
+    border-radius: 40px;
+  }
+  
+  header h1 {
+    font-size: 50px;
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 30px;
+    margin: 10px 0 0;
+  }
+  
+  /* Features Section */
+  #features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    /* background-color: #f4f4f4; */
+    flex-wrap: wrap;
+  }
+  
+  .feature-box {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+  }
+  
+  .feature-box img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .feature-box h2 {
+    margin: 10px 0;
+  }
+  
+  /* Testimonials Section */
+  #testimonials {
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .testimonial-box {
+    background-color: #444;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonial-box p {
+    font-style: italic;
+  }
+  
+  .testimonial-box h3 {
+    margin-top: 10px;
+  }
+  
+  /* Footer Section */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Custom Scrollbar for Chrome */
+  body::-webkit-scrollbar {
+    width: 6px; 
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #323232; 
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #f7cc1e;
+    border-radius: 6px; 
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: #917812; 
+  }
+  
