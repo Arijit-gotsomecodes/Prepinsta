@@ -85,6 +85,11 @@ body {
     max-height: 500px;
     object-fit: cover;
     border-radius: 10px;
+    
+  }
+  .feature-box:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
   }
   
   .feature-box h2 {
