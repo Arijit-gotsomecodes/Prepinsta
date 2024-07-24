@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <h2 class="header-txt">Technology Quiz</h2>
+            <div id="timer">Time: <span id="time">30</span> seconds</div>
+            <div id="score">Score: <span id="score">0</span></div>
+        </div>
+        <div class="quiz-body">
+            <h2 id="question">Question Text</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="a" class="answer" />
+                    <label for="a" id="a_text">Question Option A</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="b" class="answer" />
+                    <label for="b" id="b_text">Question Option B</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="c" class="answer" />
+                    <label for="c" id="c_text">Question Option C</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="d" class="answer" />
+                    <label for="d" id="d_text">Question Option D</label>
+                </li>
+            </ul>
+        </div>
+        <div class="quiz-footer">
+            <div class="quiz-details"></div>
+            <button type="button" id="btn">Submit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .book-list {
+            margin-top: 20px;
+        }
+        .book-item {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Library Management System</h1>
+        <div class="card mt-5">
+            <div class="card-header">
+                Add a New Book
+            </div>
+            <div class="card-body">
+                <form id="bookForm">
+                    <div class="form-group">
+                        <label for="title">Title</label>
+                        <input type="text" class="form-control" id="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="author">Author</label>
+                        <input type="text" class="form-control" id="author" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pages">Pages</label>
+                        <input type="number" class="form-control" id="pages" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="genre">Genre</label>
+                        <input type="text" class="form-control" id="genre" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Book</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card mt-5">
+            <div class="card-header">
+                Search for a Book
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="search" placeholder="Enter book title">
+                </div>
+            </div>
+        </div>
+
+        <div id="no-books-found" class="alert alert-danger mt-3" style="display: none;">
+            No books found.
+        </div>
+
+        <div id="book-list" class="book-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
