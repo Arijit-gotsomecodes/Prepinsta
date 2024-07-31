@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for cart icon -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Etsy Shop</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+            <button class="btn btn-outline-dark my-2 my-sm-0" id="cart-icon">
+                <i class="fa fa-shopping-cart"></i> <span id="cart-count">0</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Products -->
+            <div class="col-md-8" id="product-section">
+                <div class="row">
+                    <div class="col-md-4 product-item">
+                        <div class="card mb-4">
+                            <img src="https://i.etsystatic.com/44907830/r/il/182fd5/5941990786/il_794xN.5941990786_kwqs.jpg" class="card-img-top" alt="Product 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Sea Shells Natural Design Tough Hard Phone Case</h5>
+                                <p class="card-text">₹1293.99</p>
+                                <button class="btn btn-dark add-to-cart" data-name="Sea Shells Natural Design Tough Hard Phone Case For iPhone 15" data-price="1293.99">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 product-item">
+                        <div class="card mb-4">
+                            <img src="https://i.etsystatic.com/25317066/r/il/9b113e/3167786370/il_794xN.3167786370_hxam.jpg" class="card-img-top" alt="Product 2">
+                            <div class="card-body">
+                                <h5 class="card-title">BLACK STONES x NANA blast (white) tshirt</h5>
+                                <p class="card-text">₹2,079</p>
+                                <button class="btn btn-dark add-to-cart" data-name="BLACK STONES x NANA blast (white) tshirt" data-price="2079">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 product-item">
+                        <div class="card mb-4">
+                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Product 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Artisan Candle</h5>
+                                <p class="card-text">$19.99</p>
+                                <button class="btn btn-dark add-to-cart" data-name="Artisan Candle" data-price="19.99">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Add more products as needed -->
+                </div>
+            </div>
+            
+            <!-- Cart -->
+            <div class="col-md-4" id="cart-section" style="display: none;">
+                <h3>Your Cart</h3>
+                <ul class="list-group" id="cart-items">
+                    <!-- Cart items will be dynamically inserted here -->
+                </ul>
+                <h4>Total: ₹<span id="cart-total">0.00</span></h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- FontAwesome for cart icon -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
