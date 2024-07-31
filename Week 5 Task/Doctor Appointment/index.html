@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Appointment System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="gradient-custom">
+    <div class="container">
+      <header>
+        <h1>Doctor Appointment System</h1>
+      </header>
+
+      <section>
+        <h2>Book an Appointment</h2>
+        <form id="booking-form">
+          <label for="patient-name">Patient Name:</label>
+          <input type="text" id="patient-name" required>
+          
+          <label for="doctor-selection">Select Doctor:</label>
+          <select id="doctor-selection" required></select>
+          
+          <label for="appointment-date">Appointment Date:</label>
+          <input type="date" id="appointment-date" required>
+          
+          <label for="appointment-time">Appointment Time:</label>
+          <select id="appointment-time" required></select>
+          
+          <button type="submit">Book Appointment</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Cancel an Appointment</h2>
+        <form id="cancellation-form">
+          <label for="appointment-id">Appointment ID:</label>
+          <input type="text" id="appointment-id" required>
+          
+          <button type="submit">Cancel Appointment</button>
+        </form>
+      </section>
+
+      <button id="view-appointments-btn" class="view-btn">View Appointments</button>
+      <section id="appointments-section">
+        <h2>Appointments</h2>
+        <div id="appointments-list"></div>
+      </section>
+
+      <section id="doctors-section">
+        <h2>Doctors Information</h2>
+        <div id="doctors-list" class="doctor-container"></div>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
