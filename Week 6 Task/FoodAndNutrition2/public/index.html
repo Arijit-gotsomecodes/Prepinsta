@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food and Nutrition Data</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Food and Nutrition Data</h1>
+    
+    <section id="add-food">
+        <h2>Add Food Item</h2>
+        <form id="addFoodForm">
+            <label for="foodItemName">Food Item Name:</label>
+            <input type="text" id="foodItemName" required>
+            
+            <label for="foodGroup">Food Group:</label>
+            <input type="text" id="foodGroup">
+            
+            <label for="description">Description:</label>
+            <textarea id="description"></textarea>
+            
+            <!-- Add more input fields as per the FoodModel schema -->
+            
+            <button type="submit">Add Food Item</button>
+        </form>
+    </section>
+    
+    <section id="food-list">
+        <h2>Food Items</h2>
+        <table id="foodTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Food Group</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Food items will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
