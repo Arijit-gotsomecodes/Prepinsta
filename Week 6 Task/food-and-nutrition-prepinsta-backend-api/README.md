@@ -6,7 +6,7 @@ This project is a back-end component developed as part of the Week-6 assignment.
 
 ## Live API
 
-You can view and interact with the API documentation at: [Food and Nutrition API Documentation](https://food-and-nutrition-prepinsta.vercel.app/)
+You can view and interact with the API at: [Food and Nutrition API](https://food-and-nutrition-prepinsta.vercel.app/)
 
 ## Important Notice
 
