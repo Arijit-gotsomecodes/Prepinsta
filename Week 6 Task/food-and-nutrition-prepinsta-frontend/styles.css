@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #e0f7fa;
+}
+.boro{
+    font-size: 50px;
+}
+
+.container {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #b2dfdb; /* Light border around container */
+}
+
+h1 {
+    text-align: center;
+    color: #00695c;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #004d40; /* Underline for header */
+    padding-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* Fixes the width of columns */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #ddd; /* Bottom border for cells */
+    word-wrap: break-word; /* Ensures text wraps inside the cell */
+    max-width: 150px; /* Sets a maximum width to prevent overflow */
+}
+
+th {
+    background-color: #004d40;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    /* Top border for header cells */
+    border-bottom: 2px solid #004d40; /* Bottom border for header cells */
+    position: -webkit-sticky; /* For Safari */
+    position: sticky; /* For modern browsers */
+    top: 0; /* Position the sticky header at the top of the viewport */
+    z-index: 1; /* Ensure the header is above other content */
+}
+
+th:first-child {
+    border-top-left-radius: 10px; /* Rounded top-left corner */
+}
+
+th:last-child {
+    border-top-right-radius: 10px; /* Rounded top-right corner */
+}
+
+td {
+    background-color: #f5f5f5;
+}
+
+tr:hover {
+    background-color: #e0f2f1;
+}
+
+button {
+    padding: 10px 20px; /* Adjusted padding for better button size */
+    background-color: #00897b;
+    color: white;
+    border: 2px solid #00695c; /* Border around button */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Improved button text size */
+}
+
+button:hover {
+    background-color: #00695c;
+    border-color: #004d40; /* Darker border on hover */
+}
+
+.form-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* Matches container background */
+    border: 1px solid #b2dfdb; /* Light border to match container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.form-container h2 {
+    color: #004d40; /* Darker header color */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #004d40; /* Underline for header */
+    padding-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap; /* Allows inputs to wrap */
+    gap: 10px; /* Space between inputs */
+}
+
+form input {
+    flex: 1 1 100%; /* Inputs take full width on small screens */
+    padding: 10px;
+    border: 1px solid #b2dfdb; /* Matches container border */
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+form button {
+    flex: 1 1 100%; /* Button takes full width on small screens */
+}
