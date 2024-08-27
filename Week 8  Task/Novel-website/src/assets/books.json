@@ -1,0 +1,17 @@
+[
+    {
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "genre": "Fiction",
+      "description": "A novel set in the Roaring Twenties...",
+      "coverUrl": "https://example.com/gatsby.jpg"
+    },
+    {
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Dystopian",
+      "description": "A dystopian social science fiction novel...",
+      "coverUrl": "https://example.com/1984.jpg"
+    }
+  ]
+  

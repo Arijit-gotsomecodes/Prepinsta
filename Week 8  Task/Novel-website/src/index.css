@@ -1,0 +1,6 @@
+/* src/index.css or src/App.css */
+@import "./carousel.css"; /* Import carousel styles first */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
